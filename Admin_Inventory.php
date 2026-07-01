@@ -144,11 +144,11 @@ include 'db.php';
         </a>
         <div class="w3-right w3-hide-small">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="Admin_home.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
-            <a href="Admin_Donor.php" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Donors</a>
+            <a href="Admin_home.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large  w3-hover-white">Home</a>
+            <a href="Admin_Inventory.php" class="w3-button w3-3-bar-item w3-button w3-padding-large w3-white ">Inventory</a>
+            <a href="Admin_Donor.php" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white" style="text-decoration: none">Donors</a>
             <a href="Admin_Request.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Request</a>
-            <a href="Admin_Inventory.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Inventory</a>
-            <a onclick="javascript:return confirm('Do you want to logout?');" href="Admin_Login.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Logout</a>
+            <a onclick="javascript:return confirm(`Do you want to logout?`);" href="Admin_Login.php" class="w3-button w3-3-bar-item w3-button w3-padding-large w3-hover-white">Logout</a>
         </div>
     </div>
 </div>
