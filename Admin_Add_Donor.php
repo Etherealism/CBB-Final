@@ -6,10 +6,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <title>Admin - Add Donor</title>
-<?php
-	//SQL connection
-	$con = mysqli_connect('localhost','eth','gunzs12345','blood_db');
 
+<?php 
+include 'db.php'; 
+?>
+
+<?php
 	//Variables
 	if(isset($_POST['submit']))
 	{
@@ -21,14 +23,14 @@
 		$bpacks = $_POST['bpacks'];
 
 		$get_blood = "SELECT `blood_packs` FROM blood_inventory WHERE blood_type = '$btype'";
-		$que1 = mysqli_query($con,$get_blood);
+		$que1 = mysqli_query($conn,$get_blood);
 		$blood_db = mysqli_fetch_assoc($que1);
 		$tblood = $blood_db['blood_packs'] + $bpacks;
 		$sql = "INSERT INTO `donors` (`name`,`num`,`address`,`email`,`blood_type`,`blood_amount`,`status`) VALUES 
 		('$name','$cnum','$addr','$email','$btype','$bpacks','0')";
 		$sql2 = "UPDATE blood_inventory SET blood_packs = '$tblood' WHERE `blood_type` = '$btype'";
-		$que1 = mysqli_query($con,$sql2);
-		$que = mysqli_query($con,$sql);
+		$que1 = mysqli_query($conn,$sql2);
+		$que = mysqli_query($conn,$sql);
 
 		if($que)
 		{
