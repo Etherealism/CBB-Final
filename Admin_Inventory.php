@@ -144,9 +144,9 @@ include 'db.php';
         </a>
          <div class="w3-right w3-hide-small">
             <a href="Admin_home.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-            <a href="Admin_Inventory.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Inventory</a>
+            <a href="Admin_Inventory.php" class="w3-bar-item w3-button w3-padding-large w3-white">Inventory</a>
             <a href="Admin_Donor.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Donors</a>
-            <a href="Admin_Request.php" class="w3-bar-item w3-button w3-padding-large w3-white">Request</a>
+            <a href="Admin_Request.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Request</a>
             <a onclick="javascript:return confirm('Do you want to logout?');" href="Admin_Login.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Logout</a>
         </div>
     </div>
